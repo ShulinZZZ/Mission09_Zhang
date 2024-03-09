@@ -1,20 +1,24 @@
-import React from "react";
-import "./App.css";
-import jsonData from "./CollegeBasketballTeams.json";
+import React from 'react';
+import './App.css';
+import jsonData from './CollegeBasketballTeams.json';
 
 class Team extends React.Component {
   render() {
     return (
       <div>
         {jsonData.teams.map((team, index) => (
-          <div key={index}>
-            <h5>School Name:</h5> <p>{team.school}</p>
-            <h5>Mascot Name:</h5> <p>{team.name}</p>
-            <h5>Location:</h5>{" "}
-            <p>
-              {team.city}, {team.state}
-            </p>
-            <br></br>
+          <div key={index} className="container">
+            <div className="row">
+              <div className="col-4">
+                <h5>School Name:</h5> <p>{team.school}</p>
+                <h5>Mascot Name:</h5> <p>{team.name}</p>
+                <h5>Location:</h5>{' '}
+                <p>
+                  {team.city}, {team.state}
+                </p>
+                <br></br>
+              </div>
+            </div>
           </div>
         ))}
       </div>
