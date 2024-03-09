@@ -20,6 +20,8 @@ class TeamCard extends React.Component {
                   <p className="card-text">
                     {team.city}, {team.state}
                   </p>
+                  <br></br>
+                  <br></br>
                 </div>
               </div>
             </div>
@@ -33,7 +35,7 @@ class TeamCard extends React.Component {
 function Heading() {
   return (
     <div>
-      <h1>About this Website</h1>
+      <h1>NCAA Basketball Teams</h1>
       <p>
         This Website lists out information about all the colleges in NCAA
         Basketball.
